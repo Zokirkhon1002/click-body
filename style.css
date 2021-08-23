@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+h1 {
+    background-color: transparent;
+    font-size: 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: -1;
+}
+body .circle {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 50rem;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 2s ease-out;
+  }
+  @keyframes scale {
+    to {
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+    }
+  }
